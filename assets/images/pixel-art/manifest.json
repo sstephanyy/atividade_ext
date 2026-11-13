@@ -1,0 +1,864 @@
+{
+  "source": "Pixel Finance Education Asset Sheet.png",
+  "sourceSize": [
+    1536,
+    1024
+  ],
+  "assetCount": 61,
+  "assets": [
+    {
+      "file": "personagem-estudante.png",
+      "name": "Estudante com notebook",
+      "description": "Personagem principal estudando com notebook, usada no hero e no login.",
+      "sourceBox": [
+        15,
+        8,
+        314,
+        388
+      ],
+      "width": 297,
+      "height": 379,
+      "bytes": 117872
+    },
+    {
+      "file": "porquinho-cofre.png",
+      "name": "Porquinho cofre",
+      "description": "Cofrinho rosa com moeda dourada, símbolo de poupança.",
+      "sourceBox": [
+        307,
+        75,
+        492,
+        264
+      ],
+      "width": 186,
+      "height": 189,
+      "bytes": 35635
+    },
+    {
+      "file": "trofeu.png",
+      "name": "Troféu com louros",
+      "description": "Troféu dourado com ramos de louro, usado em conquistas.",
+      "sourceBox": [
+        487,
+        44,
+        775,
+        250
+      ],
+      "width": 285,
+      "height": 199,
+      "bytes": 65159
+    },
+    {
+      "file": "medalha-ouro.png",
+      "name": "Medalha de ouro",
+      "description": "Medalha dourada com cifrão.",
+      "sourceBox": [
+        808,
+        148,
+        894,
+        276
+      ],
+      "width": 84,
+      "height": 125,
+      "bytes": 15043
+    },
+    {
+      "file": "medalha-prata.png",
+      "name": "Medalha de prata",
+      "description": "Medalha prateada com cifrão.",
+      "sourceBox": [
+        908,
+        148,
+        996,
+        276
+      ],
+      "width": 85,
+      "height": 124,
+      "bytes": 15581
+    },
+    {
+      "file": "medalha-bronze.png",
+      "name": "Medalha de bronze",
+      "description": "Medalha de bronze com estrela.",
+      "sourceBox": [
+        1009,
+        148,
+        1095,
+        276
+      ],
+      "width": 84,
+      "height": 124,
+      "bytes": 15379
+    },
+    {
+      "file": "escudo.png",
+      "name": "Escudo com estrela",
+      "description": "Escudo azul e dourado, símbolo de segurança e conquista.",
+      "sourceBox": [
+        1112,
+        141,
+        1222,
+        283
+      ],
+      "width": 108,
+      "height": 138,
+      "bytes": 21987
+    },
+    {
+      "file": "estrela-dourada.png",
+      "name": "Estrela dourada",
+      "description": "Estrela dourada, usada para pontos e destaques.",
+      "sourceBox": [
+        1018,
+        40,
+        1107,
+        129
+      ],
+      "width": 86,
+      "height": 85,
+      "bytes": 8672
+    },
+    {
+      "file": "estrela-azul.png",
+      "name": "Estrela azul",
+      "description": "Estrela azul, usada para pontos e conquistas.",
+      "sourceBox": [
+        1124,
+        33,
+        1210,
+        122
+      ],
+      "width": 84,
+      "height": 85,
+      "bytes": 8612
+    },
+    {
+      "file": "moeda-ouro.png",
+      "name": "Moeda de ouro",
+      "description": "Moeda dourada com cifrão.",
+      "sourceBox": [
+        809,
+        43,
+        899,
+        134
+      ],
+      "width": 86,
+      "height": 88,
+      "bytes": 10295
+    },
+    {
+      "file": "moeda-pequena.png",
+      "name": "Moeda pequena",
+      "description": "Moeda dourada pequena, usada como detalhe.",
+      "sourceBox": [
+        1041,
+        540,
+        1090,
+        584
+      ],
+      "width": 44,
+      "height": 38,
+      "bytes": 2293
+    },
+    {
+      "file": "pilha-moedas.png",
+      "name": "Pilha de moedas",
+      "description": "Pilha de moedas douradas, símbolo de economia.",
+      "sourceBox": [
+        1103,
+        480,
+        1218,
+        588
+      ],
+      "width": 110,
+      "height": 103,
+      "bytes": 14180
+    },
+    {
+      "file": "diamante.png",
+      "name": "Diamante",
+      "description": "Diamante azul, usado como recompensa.",
+      "sourceBox": [
+        1315,
+        502,
+        1394,
+        575
+      ],
+      "width": 75,
+      "height": 69,
+      "bytes": 6571
+    },
+    {
+      "file": "brilho-estrela.png",
+      "name": "Brilho em estrela",
+      "description": "Pequeno brilho de quatro pontas.",
+      "sourceBox": [
+        1234,
+        47,
+        1286,
+        104
+      ],
+      "width": 48,
+      "height": 53,
+      "bytes": 2720
+    },
+    {
+      "file": "brilho-dourado.png",
+      "name": "Brilhos dourados",
+      "description": "Dois brilhos dourados de quatro pontas.",
+      "sourceBox": [
+        1283,
+        58,
+        1401,
+        131
+      ],
+      "width": 114,
+      "height": 69,
+      "bytes": 3451
+    },
+    {
+      "file": "brilho-linhas.png",
+      "name": "Linhas de brilho",
+      "description": "Traços amarelos de destaque.",
+      "sourceBox": [
+        1416,
+        36,
+        1489,
+        119
+      ],
+      "width": 70,
+      "height": 71,
+      "bytes": 3246
+    },
+    {
+      "file": "balao-motivacional.png",
+      "name": "Balão Você consegue!",
+      "description": "Balão de fala com a mensagem Você consegue! Continue assim!",
+      "sourceBox": [
+        1258,
+        138,
+        1522,
+        294
+      ],
+      "width": 267,
+      "height": 153,
+      "bytes": 43432
+    },
+    {
+      "file": "balao-conquistas.png",
+      "name": "Balão Grandes conquistas",
+      "description": "Balão de fala com a mensagem Grandes conquistas começam com boas escolhas!",
+      "sourceBox": [
+        417,
+        841,
+        731,
+        986
+      ],
+      "width": 318,
+      "height": 143,
+      "bytes": 48800
+    },
+    {
+      "file": "livro.png",
+      "name": "Livro de finanças",
+      "description": "Livro verde com cifrão, usado nos módulos.",
+      "sourceBox": [
+        322,
+        302,
+        434,
+        435
+      ],
+      "width": 110,
+      "height": 131,
+      "bytes": 16571
+    },
+    {
+      "file": "calendario.png",
+      "name": "Calendário",
+      "description": "Calendário de planejamento.",
+      "sourceBox": [
+        436,
+        306,
+        544,
+        426
+      ],
+      "width": 107,
+      "height": 118,
+      "bytes": 14183
+    },
+    {
+      "file": "calculadora.png",
+      "name": "Calculadora",
+      "description": "Calculadora azul, usada em cálculos e juros.",
+      "sourceBox": [
+        554,
+        306,
+        652,
+        432
+      ],
+      "width": 97,
+      "height": 125,
+      "bytes": 16812
+    },
+    {
+      "file": "grafico-crescimento.png",
+      "name": "Gráfico de crescimento",
+      "description": "Gráfico de barras com seta de crescimento.",
+      "sourceBox": [
+        660,
+        302,
+        765,
+        426
+      ],
+      "width": 102,
+      "height": 121,
+      "bytes": 13896
+    },
+    {
+      "file": "planta-dinheiro.png",
+      "name": "Planta do dinheiro",
+      "description": "Muda verde brotando de moedas, símbolo de investimento.",
+      "sourceBox": [
+        777,
+        304,
+        870,
+        433
+      ],
+      "width": 91,
+      "height": 124,
+      "bytes": 15376
+    },
+    {
+      "file": "cartao-bancario.png",
+      "name": "Cartão bancário",
+      "description": "Cartão azul de débito/crédito.",
+      "sourceBox": [
+        877,
+        324,
+        998,
+        425
+      ],
+      "width": 118,
+      "height": 99,
+      "bytes": 13781
+    },
+    {
+      "file": "carteira.png",
+      "name": "Carteira com dinheiro",
+      "description": "Carteira marrom com notas e planta.",
+      "sourceBox": [
+        1004,
+        307,
+        1111,
+        425
+      ],
+      "width": 105,
+      "height": 117,
+      "bytes": 14509
+    },
+    {
+      "file": "cofre.png",
+      "name": "Cofre",
+      "description": "Cofre de segurança azul.",
+      "sourceBox": [
+        1117,
+        306,
+        1249,
+        445
+      ],
+      "width": 129,
+      "height": 136,
+      "bytes": 20857
+    },
+    {
+      "file": "loja.png",
+      "name": "Loja",
+      "description": "Loja com toldo vermelho, usada em consumo.",
+      "sourceBox": [
+        1253,
+        307,
+        1397,
+        442
+      ],
+      "width": 143,
+      "height": 133,
+      "bytes": 26729
+    },
+    {
+      "file": "globo.png",
+      "name": "Globo terrestre",
+      "description": "Globo terrestre, usado em economia global.",
+      "sourceBox": [
+        1397,
+        303,
+        1515,
+        451
+      ],
+      "width": 116,
+      "height": 146,
+      "bytes": 22145
+    },
+    {
+      "file": "planta-vaso-laranja.png",
+      "name": "Planta em vaso laranja",
+      "description": "Planta em vaso laranja.",
+      "sourceBox": [
+        26,
+        414,
+        144,
+        564
+      ],
+      "width": 115,
+      "height": 148,
+      "bytes": 19119
+    },
+    {
+      "file": "planta-vaso-alto.png",
+      "name": "Planta em vaso alto",
+      "description": "Planta alta em vaso laranja.",
+      "sourceBox": [
+        172,
+        427,
+        300,
+        577
+      ],
+      "width": 126,
+      "height": 147,
+      "bytes": 20708
+    },
+    {
+      "file": "planta-vaso-pequeno.png",
+      "name": "Planta pequena",
+      "description": "Planta pequena em vaso escuro.",
+      "sourceBox": [
+        321,
+        475,
+        414,
+        577
+      ],
+      "width": 91,
+      "height": 100,
+      "bytes": 11695
+    },
+    {
+      "file": "arbusto.png",
+      "name": "Arbusto",
+      "description": "Arbusto verde arredondado.",
+      "sourceBox": [
+        417,
+        454,
+        549,
+        578
+      ],
+      "width": 129,
+      "height": 122,
+      "bytes": 19733
+    },
+    {
+      "file": "grama-bloco.png",
+      "name": "Bloco de grama",
+      "description": "Bloco de grama com terra.",
+      "sourceBox": [
+        570,
+        487,
+        708,
+        576
+      ],
+      "width": 135,
+      "height": 87,
+      "bytes": 16608
+    },
+    {
+      "file": "grama-bloco-pequeno.png",
+      "name": "Bloco de grama pequeno",
+      "description": "Bloco de grama pequeno com terra.",
+      "sourceBox": [
+        716,
+        487,
+        834,
+        581
+      ],
+      "width": 117,
+      "height": 92,
+      "bytes": 14936
+    },
+    {
+      "file": "nuvem.png",
+      "name": "Nuvem",
+      "description": "Nuvem branca com contorno azul.",
+      "sourceBox": [
+        845,
+        474,
+        997,
+        577
+      ],
+      "width": 150,
+      "height": 100,
+      "bytes": 13330
+    },
+    {
+      "file": "nuvem-pequena.png",
+      "name": "Nuvem pequena",
+      "description": "Nuvem pequena.",
+      "sourceBox": [
+        983,
+        459,
+        1084,
+        525
+      ],
+      "width": 99,
+      "height": 65,
+      "bytes": 6786
+    },
+    {
+      "file": "cenario-jardim.png",
+      "name": "Cenário de jardim",
+      "description": "Cenário decorativo com árvores, arbustos e placa Aprenda, Planeje, Conquiste.",
+      "sourceBox": [
+        724,
+        782,
+        1520,
+        998
+      ],
+      "width": 795,
+      "height": 224,
+      "bytes": 188681
+    },
+    {
+      "file": "status-concluido.png",
+      "name": "Status concluído",
+      "description": "Etiqueta verde de módulo concluído.",
+      "sourceBox": [
+        14,
+        586,
+        259,
+        658
+      ],
+      "width": 243,
+      "height": 72,
+      "bytes": 18900
+    },
+    {
+      "file": "status-em-andamento.png",
+      "name": "Status em andamento",
+      "description": "Etiqueta azul de módulo em andamento.",
+      "sourceBox": [
+        14,
+        660,
+        260,
+        731
+      ],
+      "width": 246,
+      "height": 71,
+      "bytes": 19126
+    },
+    {
+      "file": "status-nao-iniciado.png",
+      "name": "Status não iniciado",
+      "description": "Etiqueta cinza de módulo não iniciado.",
+      "sourceBox": [
+        14,
+        732,
+        260,
+        802
+      ],
+      "width": 245,
+      "height": 70,
+      "bytes": 18301
+    },
+    {
+      "file": "icone-concluido.png",
+      "name": "Ícone de concluído",
+      "description": "Círculo verde com check, sem texto.",
+      "sourceBox": [
+        36,
+        598,
+        86,
+        649
+      ],
+      "width": 53,
+      "height": 53,
+      "bytes": 3745
+    },
+    {
+      "file": "icone-em-andamento.png",
+      "name": "Ícone em andamento",
+      "description": "Círculo azul com play, sem texto.",
+      "sourceBox": [
+        36,
+        671,
+        86,
+        720
+      ],
+      "width": 53,
+      "height": 53,
+      "bytes": 3410
+    },
+    {
+      "file": "icone-nao-iniciado.png",
+      "name": "Ícone não iniciado",
+      "description": "Círculo cinza com chevron, sem texto.",
+      "sourceBox": [
+        36,
+        744,
+        86,
+        793
+      ],
+      "width": 48,
+      "height": 47,
+      "bytes": 2953
+    },
+    {
+      "file": "icone-porcentagem.png",
+      "name": "Ícone de porcentagem",
+      "description": "Selo amarelo com sinal de porcentagem.",
+      "sourceBox": [
+        988,
+        615,
+        1055,
+        682
+      ],
+      "width": 68,
+      "height": 72,
+      "bytes": 6202
+    },
+    {
+      "file": "botao-sino.png",
+      "name": "Botão de notificações",
+      "description": "Botão redondo com sino.",
+      "sourceBox": [
+        274,
+        588,
+        366,
+        681
+      ],
+      "width": 93,
+      "height": 93,
+      "bytes": 9443
+    },
+    {
+      "file": "botao-avatar.png",
+      "name": "Botão de avatar",
+      "description": "Botão redondo com avatar de estudante.",
+      "sourceBox": [
+        380,
+        587,
+        479,
+        686
+      ],
+      "width": 99,
+      "height": 99,
+      "bytes": 14931
+    },
+    {
+      "file": "botao-configuracoes.png",
+      "name": "Botão de configurações",
+      "description": "Botão redondo com engrenagem.",
+      "sourceBox": [
+        492,
+        588,
+        588,
+        684
+      ],
+      "width": 96,
+      "height": 97,
+      "bytes": 12483
+    },
+    {
+      "file": "botao-ajuda.png",
+      "name": "Botão de ajuda",
+      "description": "Botão redondo com interrogação.",
+      "sourceBox": [
+        602,
+        588,
+        696,
+        682
+      ],
+      "width": 94,
+      "height": 95,
+      "bytes": 9943
+    },
+    {
+      "file": "card-pontos.png",
+      "name": "Cartão de pontos",
+      "description": "Cartão de exemplo com estrela e 1.240 pontos.",
+      "sourceBox": [
+        724,
+        598,
+        963,
+        705
+      ],
+      "width": 240,
+      "height": 106,
+      "bytes": 27091
+    },
+    {
+      "file": "card-acertos.png",
+      "name": "Cartão de taxa de acerto",
+      "description": "Cartão de exemplo com 82% de taxa de acerto.",
+      "sourceBox": [
+        975,
+        598,
+        1255,
+        705
+      ],
+      "width": 280,
+      "height": 106,
+      "bytes": 33993
+    },
+    {
+      "file": "botao-continuar.png",
+      "name": "Botão continuar",
+      "description": "Botão verde com a palavra Continuar.",
+      "sourceBox": [
+        1267,
+        596,
+        1511,
+        691
+      ],
+      "width": 243,
+      "height": 95,
+      "bytes": 23947
+    },
+    {
+      "file": "barra-progresso-verde.png",
+      "name": "Barra de progresso verde",
+      "description": "Barra de progresso verde de exemplo.",
+      "sourceBox": [
+        287,
+        712,
+        702,
+        748
+      ],
+      "width": 416,
+      "height": 36,
+      "bytes": 9669
+    },
+    {
+      "file": "barra-progresso-azul.png",
+      "name": "Barra de progresso azul",
+      "description": "Barra de progresso azul de exemplo.",
+      "sourceBox": [
+        287,
+        752,
+        702,
+        790
+      ],
+      "width": 416,
+      "height": 36,
+      "bytes": 9510
+    },
+    {
+      "file": "botao-revisar.png",
+      "name": "Botão revisar",
+      "description": "Botão branco com a palavra Revisar e ícone de retorno.",
+      "sourceBox": [
+        727,
+        714,
+        963,
+        797
+      ],
+      "width": 236,
+      "height": 82,
+      "bytes": 17755
+    },
+    {
+      "file": "botao-comecar.png",
+      "name": "Botão começar",
+      "description": "Botão branco com a palavra Começar e ícone de play.",
+      "sourceBox": [
+        976,
+        714,
+        1252,
+        793
+      ],
+      "width": 277,
+      "height": 79,
+      "bytes": 20462
+    },
+    {
+      "file": "card-progresso-modulos.png",
+      "name": "Cartão de progresso",
+      "description": "Cartão de exemplo com 1 de 10 módulos concluídos.",
+      "sourceBox": [
+        13,
+        826,
+        361,
+        984
+      ],
+      "width": 346,
+      "height": 158,
+      "bytes": 51582
+    },
+    {
+      "file": "icone-revisar.png",
+      "name": "Ícone revisar",
+      "description": "Seta circular verde de revisão.",
+      "sourceBox": [
+        760,
+        734,
+        806,
+        778
+      ],
+      "width": 34,
+      "height": 32,
+      "bytes": 1295
+    },
+    {
+      "file": "icone-comecar.png",
+      "name": "Ícone começar",
+      "description": "Triângulo verde de play.",
+      "sourceBox": [
+        1035,
+        733,
+        1082,
+        780
+      ],
+      "width": 32,
+      "height": 38,
+      "bytes": 1213
+    },
+    {
+      "file": "icone-avancar.png",
+      "name": "Ícone avançar",
+      "description": "Chevron branco de avançar.",
+      "sourceBox": [
+        1466,
+        627,
+        1491,
+        662
+      ],
+      "width": 22,
+      "height": 30,
+      "bytes": 445
+    },
+    {
+      "file": "brilho-balao-esquerda.png",
+      "name": "Brilho à esquerda do balão",
+      "description": "Traços amarelos de destaque.",
+      "sourceBox": [
+        369,
+        846,
+        414,
+        894
+      ],
+      "width": 40,
+      "height": 43,
+      "bytes": 1411
+    },
+    {
+      "file": "brilho-balao-direita.png",
+      "name": "Brilho à direita do balão",
+      "description": "Traços amarelos de destaque.",
+      "sourceBox": [
+        731,
+        812,
+        785,
+        867
+      ],
+      "width": 28,
+      "height": 27,
+      "bytes": 772
+    }
+  ]
+}

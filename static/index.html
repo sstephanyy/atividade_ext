@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GranaLab – Educação financeira</title>
+<script>
+/* Portão de acesso: resolvido antes da primeira pintura. */
+(function(){
+  var on=false;
+  try{
+    var s=JSON.parse(localStorage.getItem('granalab.session')||'null');
+    on=!!(s&&s.name);
+  }catch(e){}
+  document.documentElement.setAttribute('data-auth',on?'in':'out');
+})();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/assets/images/pixel-art/moeda-ouro.png">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="auth" id="auth">
+  <div class="auth-visual" aria-hidden="true">
+    <div class="auth-scene">
+      <img class="auth-cloud" src="/assets/images/pixel-art/nuvem.png" alt="">
+      <img class="auth-cloud small" src="/assets/images/pixel-art/nuvem-pequena.png" alt="">
+      <img class="auth-plant left" src="/assets/images/pixel-art/planta-vaso-alto.png" alt="">
+      <img class="auth-plant right" src="/assets/images/pixel-art/planta-vaso-laranja.png" alt="">
+      <div class="auth-grass"></div>
+      <img class="auth-student" src="/assets/images/pixel-art/personagem-estudante.png" alt="">
+      <img class="auth-coin" src="/assets/images/pixel-art/moeda-ouro.png" alt="">
+      <img class="auth-spark" src="/assets/images/pixel-art/brilho-dourado.png" alt="">
+    </div>
+    <div class="auth-copy">
+      <span class="eyebrow">Aprenda no seu ritmo</span>
+      <h2>Aprenda, planeje, conquiste.</h2>
+      <p>Dez módulos curtos, atividades práticas e um assistente para tirar dúvidas sobre dinheiro.</p>
+      <ul class="auth-list">
+        <li><img src="/assets/images/pixel-art/icone-concluido_novo.png" alt="">Módulos com quizzes</li>
+        <li><img src="/assets/images/pixel-art/moeda-ouro.png" alt="">Progresso salvo no navegador</li>
+        <li><img src="/assets/images/pixel-art/botao-avatar.png" alt="">Assistente de finanças</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="auth-card">
+    <div class="brand auth-brand">
+      <span class="logo" aria-hidden="true"><img src="/assets/images/pixel-art/porquinho-cofre_HD2.png" alt=""></span>
+      <span class="brand-name">GranaLab</span>
+      <span class="brand-tag">Aprenda. Planeje. Conquiste.</span>
+    </div>
+    <p class="mute auth-sub">Educação financeira para o Ensino Médio</p>
+
+    <div class="tabs" role="tablist" aria-label="Entrar ou criar conta">
+      <button class="tab" type="button" role="tab" id="tab-login" aria-selected="true" aria-controls="pane-login">Entrar</button>
+      <button class="tab" type="button" role="tab" id="tab-register" aria-selected="false" aria-controls="pane-register">Criar conta</button>
+    </div>
+
+    <form class="pane" id="pane-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+      <div class="field">
+        <label for="loginName">Nome</label>
+        <input id="loginName" name="name" autocomplete="username" placeholder="Como você se chama" required>
+      </div>
+      <div class="field">
+        <label for="loginPass">Senha</label>
+        <input id="loginPass" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" required>
+      </div>
+      <button class="btn wide" type="submit">Entrar</button>
+      <p class="auth-msg" id="loginMsg" role="alert"></p>
+    </form>
+
+    <form class="pane" id="pane-register" role="tabpanel" aria-labelledby="tab-register" novalidate hidden>
+      <div class="field">
+        <label for="regName">Nome</label>
+        <input id="regName" name="name" autocomplete="username" placeholder="Como você se chama" required>
+      </div>
+      <div class="field">
+        <label for="regPass">Senha</label>
+        <input id="regPass" name="password" type="password" autocomplete="new-password" placeholder="Mínimo de 6 caracteres" required>
+      </div>
+      <div class="field">
+        <label for="regPass2">Confirmar senha</label>
+        <input id="regPass2" name="password2" type="password" autocomplete="new-password" placeholder="Repita a senha" required>
+      </div>
+      <button class="btn wide" type="submit">Criar conta</button>
+      <p class="auth-msg" id="regMsg" role="alert"></p>
+    </form>
+
+    <p class="note auth-note">Sua conta fica salva apenas neste navegador. Nada é enviado para a internet.</p>
+  </div>
+</div>
+
+<div class="app">
+<aside class="sidebar">
+  <a class="brand sidebar-brand" href="#inicio" aria-label="GranaLab, ir para o início">
+    <span class="logo" aria-hidden="true"><img src="/assets/images/pixel-art/porquinho-cofre_HD2.png" alt=""></span>
+    <span class="brand-name">GranaLab</span>
+    <span class="brand-tag">Aprenda. Planeje. Conquiste.</span>
+  </a>
+
+  <nav aria-label="Navegação principal" id="nav">
+    <a href="#inicio"><img class="nav-ico" src="/assets/images/pixel-art/moeda-ouro.png" alt=""><span>Início</span></a>
+    <a href="#modulos"><img class="nav-ico" src="/assets/images/pixel-art/livro.png" alt=""><span>Módulos</span></a>
+    <a href="#quiz"><img class="nav-ico" src="/assets/images/pixel-art/trofeu.png" alt=""><span>Quizzes</span></a>
+    <a href="#assistente"><img class="nav-ico" src="/assets/images/pixel-art/botao-ajuda.png" alt=""><span>Assistente</span></a>
+    <a href="#progresso"><img class="nav-ico" src="/assets/images/pixel-art/grafico-crescimento_HD.png" alt=""><span>Progresso</span></a>
+  </nav>
+
+  <div class="sidebar-note">
+    <img src="/assets/images/pixel-art/planta-dinheiro_HD.png" alt="">
+    <p>Grandes conquistas começam com boas escolhas!</p>
+  </div>
+
+  <div class="sidebar-hills" aria-hidden="true">
+    <svg viewBox="0 0 232 220" preserveAspectRatio="none" focusable="false">
+      <path d="M0 122C42 84 84 148 140 120c36-18 66-10 92-26v126H0Z" fill="#3BBE90" opacity=".62"/>
+      <path d="M0 158c52-38 104 24 160-6 27-15 52-12 72-20v88H0Z" fill="#27A17B" opacity=".82"/>
+      <path d="M0 190c64-28 146 24 232-4v34H0Z" fill="#15745F" opacity=".94"/>
+    </svg>
+  </div>
+</aside>
+
+<main id="main">
+<!-- INÍCIO / DASHBOARD -->
+<section class="view home" id="v-inicio" aria-labelledby="t-inicio">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="topbar">
+        <div class="greeting">
+          <h1 id="t-inicio">Olá, <span id="userName">estudante</span>! <span class="wave" aria-hidden="true">👋</span></h1>
+          <p class="greeting-sub" id="homeSub">Continue aprendendo sobre educação financeira e construa um futuro ainda mais sólido!</p>
+        </div>
+
+        <div class="top-actions">
+          <button class="icon-btn bell" id="bell" type="button" aria-label="Ver notificações">
+            <img src="/assets/images/pixel-art/botao-sino.png" alt="">
+            <span class="bell-dot" aria-hidden="true"></span>
+          </button>
+          <div class="profile">
+            <button class="profile-btn" id="profileBtn" type="button" aria-expanded="false" aria-controls="profileMenu" aria-haspopup="menu">
+              <span class="avatar" id="userAvatar" aria-hidden="true"><img src="/assets/images/pixel-art/botao-avatar.png" alt=""></span>
+              <span class="profile-name" id="userNameSide">Estudante</span>
+              <svg class="i chev" data-i="chev" aria-hidden="true"></svg>
+            </button>
+            <div class="profile-menu" id="profileMenu" role="menu" hidden>
+              <button type="button" class="menu-item" id="helpMenu" role="menuitem">
+                <img src="/assets/images/pixel-art/botao-ajuda.png" alt=""><span>Assistente</span>
+              </button>
+              <button type="button" class="menu-item danger" id="logout" role="menuitem">
+                <svg class="i" data-i="logout" aria-hidden="true"></svg><span>Sair</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats" aria-label="Resumo do estudante">
+        <article class="stat-card stat-green">
+          <span class="stat-icon stat-icon--done"><img src="/assets/images/pixel-art/icone-concluido_novo.png" alt=""></span>
+          <div class="stat-copy"><b id="statDone">0 de 10</b><span>módulos concluídos</span></div>
+          <img class="stat-spark" src="/assets/images/pixel-art/brilho-estrela.png" alt="">
+          <div class="stat-bar" role="img" aria-label="0% do curso concluído" id="statBarWrap"><i id="statBar" style="width:0%"></i></div>
+        </article>
+        <article class="stat-card stat-blue">
+          <span class="stat-icon"><img src="/assets/images/pixel-art/estrela-azul.png" alt=""></span>
+          <div class="stat-copy"><b id="statPts">0</b><span>pontos</span></div>
+        </article>
+        <article class="stat-card stat-cream">
+          <span class="stat-icon"><img src="/assets/images/pixel-art/moeda_porcentagem_HD.png" alt=""></span>
+          <div class="stat-copy"><b id="statAvg">0%</b><span>taxa de acerto</span></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="hero-clouds" aria-hidden="true">
+      <img class="cloud cloud-a" src="/assets/images/pixel-art/nuvem.png" alt="">
+      <img class="cloud cloud-b" src="/assets/images/pixel-art/nuvem-pequena.png" alt="">
+      <img class="cloud cloud-c" src="/assets/images/pixel-art/nuvem-pequena.png" alt="">
+    </div>
+
+    <div class="hero-scene" aria-hidden="true">
+      <div class="garden-hill back"></div>
+      <div class="garden-hill"></div>
+      <img class="garden-bush big" src="/assets/images/pixel-art/arbusto.png" alt="">
+      <img class="garden-bush right" src="/assets/images/pixel-art/arbusto.png" alt="">
+      <img class="garden-book" src="/assets/images/pixel-art/livro.png" alt="">
+      <img class="hero-student" src="/assets/images/pixel-art/personagem-estudante.png" alt="">
+      <img class="hero-spark" src="/assets/images/pixel-art/brilho-estrela.png" alt="">
+    </div>
+  </div>
+
+  <div class="dash-row">
+    <section class="panel progress-panel" aria-labelledby="h-progresso">
+      <header class="panel-head">
+        <h2 id="h-progresso"><img class="sec-ico" src="/assets/images/pixel-art/grafico-crescimento_HD.png" alt="">Seu progresso</h2>
+        <a class="link-ghost" href="#progresso">Ver detalhes <span aria-hidden="true">→</span></a>
+      </header>
+      <div class="module-chart" id="moduleChart" role="img" aria-label="Progresso por módulo"></div>
+    </section>
+
+    <section class="panel performance-panel" aria-labelledby="h-desempenho">
+      <header class="panel-head">
+        <h2 id="h-desempenho"><img class="sec-ico" src="/assets/images/pixel-art/trofeu.png" alt="">Seu desempenho</h2>
+      </header>
+      <div class="perf-list" id="perfList"></div>
+    </section>
+
+    <aside class="panel achievements-panel" id="achievements" aria-labelledby="h-conquistas">
+      <header class="panel-head">
+        <h2 id="h-conquistas"><img class="sec-ico" src="/assets/images/pixel-art/medalha-ouro.png" alt="">Suas conquistas</h2>
+      </header>
+      <div class="ach-body">
+        <img class="ach-trophy" id="achTrophy" src="/assets/images/pixel-art/trofeu.png" alt="">
+        <p id="achCount">Você já desbloqueou 0 conquistas!</p>
+        <a class="ach-link" href="#progresso">Ver todas <span aria-hidden="true">→</span></a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="section-head">
+    <h2><img class="sec-ico" src="/assets/images/pixel-art/livro.png" alt="">Seus módulos</h2>
+    <a class="pill-link" href="#modulos">Ver todos os módulos <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="module-grid" id="homeModules"></div>
+</section>
+
+<!-- MÓDULOS -->
+<section class="view page" id="v-modulos" aria-labelledby="t-mod">
+  <header class="page-head">
+    <div>
+      <h1 id="t-mod">Módulos</h1>
+      <p class="mute">Escolha um tema e estude no seu ritmo. São dez trilhas curtas, com atividade e quiz.</p>
+    </div>
+    <img class="page-art" src="/assets/images/pixel-art/livro.png" alt="">
+  </header>
+  <div id="modList" class="module-grid page-grid"></div>
+  <article id="modDetail" class="detail" tabindex="-1"></article>
+</section>
+
+<!-- QUIZ -->
+<section class="view page" id="v-quiz" aria-labelledby="t-quiz">
+  <header class="page-head">
+    <div>
+      <h1 id="t-quiz">Quizzes</h1>
+      <p class="mute">Um quiz de 5 perguntas por módulo. Seu melhor resultado fica salvo no seu progresso.</p>
+    </div>
+    <div class="page-art-row" aria-hidden="true">
+      <img src="/assets/images/pixel-art/medalha-ouro.png" alt="">
+      <img src="/assets/images/pixel-art/medalha-prata.png" alt="">
+      <img src="/assets/images/pixel-art/medalha-bronze.png" alt="">
+    </div>
+  </header>
+  <div class="module-grid page-grid" id="quizHub"></div>
+</section>
+
+<!-- ASSISTENTE -->
+<section class="view page" id="v-assistente" aria-labelledby="t-ai">
+  <header class="page-head">
+    <div>
+      <h1 id="t-ai">Assistente de finanças</h1>
+      <p class="mute">Tire dúvidas com explicações simples e exemplos do dia a dia.</p>
+    </div>
+    <img class="page-bubble" src="/assets/images/pixel-art/balao-conquistas.png" alt="Grandes conquistas começam com boas escolhas!">
+  </header>
+  <div class="chat">
+    <div class="chat-head">
+      <img class="chat-avatar" src="/assets/images/pixel-art/botao-avatar.png" alt="">
+      <div class="chat-who"><b>Assistente GranaLab</b><span>Educação financeira · online</span></div>
+      <img class="chat-coin" src="/assets/images/pixel-art/moeda-ouro.png" alt="">
+    </div>
+    <div class="ctx" id="ctxBar" hidden><span class="mute">Contexto:</span> <b id="ctxName"></b><button type="button" class="ctx-x" id="ctxClear" aria-label="Remover contexto do módulo">×</button></div>
+    <div class="msgs" id="msgs" role="log" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form class="send" id="chatForm"><label for="q" class="sr-only">Sua pergunta</label>
+      <input id="q" autocomplete="off" placeholder="Pergunte sobre dinheiro, orçamento, consumo…">
+      <button class="btn" type="submit"><svg class="i" data-i="send" aria-hidden="true"></svg>Enviar</button></form>
+    <p class="note">Respostas geradas por IA. Confira informações importantes com um adulto ou professor.</p>
+  </div>
+</section>
+
+<!-- PROGRESSO -->
+<section class="view page" id="v-progresso" aria-labelledby="t-pr">
+  <header class="page-head">
+    <div>
+      <h1 id="t-pr">Seu progresso</h1>
+      <p class="mute">Veja como você evoluiu nesta semana e o que já conquistou.</p>
+    </div>
+    <img class="page-art" src="/assets/images/pixel-art/grafico-crescimento_HD.png" alt="">
+  </header>
+
+  <div class="stats stats-page">
+    <article class="stat-card stat-green">
+      <span class="stat-icon stat-icon--done"><img src="/assets/images/pixel-art/icone-concluido_novo.png" alt=""></span>
+      <div class="stat-copy"><b id="prDone">0 de 10</b><span>módulos concluídos</span></div>
+      <div class="stat-bar" role="img" aria-label="0% do curso concluído" id="prBarWrap"><i id="prBar" style="width:0%"></i></div>
+    </article>
+    <article class="stat-card stat-blue">
+      <span class="stat-icon"><img src="/assets/images/pixel-art/estrela-azul.png" alt=""></span>
+      <div class="stat-copy"><b id="pts">0</b><span>pontos</span></div>
+    </article>
+    <article class="stat-card stat-cream">
+      <span class="stat-icon"><img src="/assets/images/pixel-art/moeda_porcentagem_HD.png" alt=""></span>
+      <div class="stat-copy"><b id="prAcc">0%</b><span>taxa de acerto</span></div>
+    </article>
+  </div>
+
+  <div class="progress-grid">
+    <section class="panel chart-card" aria-labelledby="h-week">
+      <header class="panel-head">
+        <h2 id="h-week"><img class="sec-ico" src="/assets/images/pixel-art/grafico-crescimento_HD.png" alt="">Pontos por dia</h2>
+      </header>
+      <div class="cols" id="weekCols" role="img" aria-label="Pontos conquistados nos últimos 7 dias"></div>
+    </section>
+    <section class="panel" aria-labelledby="h-per-mod">
+      <header class="panel-head">
+        <h2 id="h-per-mod"><img class="sec-ico" src="/assets/images/pixel-art/livro.png" alt="">Progresso por módulo</h2>
+      </header>
+      <div id="prMods" class="pr-list"></div>
+    </section>
+  </div>
+
+  <div class="section-head achievements-head" id="achievementsPage">
+    <h2><img class="sec-ico" src="/assets/images/pixel-art/trofeu.png" alt="">Conquistas</h2>
+    <span class="mute" id="achSummary"></span>
+  </div>
+  <div class="achievement-grid" id="achGrid"></div>
+</section>
+</main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/static/pixel.js"></script>
+<script src="/static/domain.js"></script>
+<script src="/static/courses.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
