@@ -100,7 +100,7 @@ GranaLab/
 │   ├── app.js              # Contas, progresso, quizzes, dashboard e assistente
 │   └── pixel.js            # Caminhos das ilustrações e helpers de imagem
 ├── assets/
-│   ├── images/pixel-art/   # 61 ilustrações PNG transparentes + manifest.json
+│   ├── images/pixel-art/   # Ilustrações PNG transparentes + manifest.json
 │   ├── source/             # Folha original de assets
 │   └── preview-*.png       # Prévia dos assets e do dashboard
 ├── scripts/
@@ -158,7 +158,7 @@ de ícones e depois barra inferior).
 ## Ilustrações pixel-art
 
 As ilustrações são recortes individuais da folha `Pixel Finance Education Asset Sheet.png`.
-O original fica em `assets/source/` e os 61 PNGs transparentes ficam em
+O original fica em `assets/source/` e os PNGs transparentes ficam em
 `assets/images/pixel-art/`, com metadados em `manifest.json`. Veja
 [`assets/README.md`](assets/README.md) para o inventário completo,
 [`assets/preview-assets.png`](assets/preview-assets.png) para a folha de contato e
@@ -171,17 +171,3 @@ O original fica em `assets/source/` e os 61 PNGs transparentes ficam em
 - Para regerar os recortes: `pip install pillow numpy && python scripts/extract_pixel_assets.py`.
   O script preserva a resolução e a estética originais, remove o fundo branco por preenchimento a
   partir das bordas e mantém os brancos internos dos balões e cartões.
-
-## Documentação
-
-- [`docs/requisitos-funcionais.md`](docs/requisitos-funcionais.md): requisitos funcionais da plataforma.
-- [`docs/diagramas/04-usuarios-progresso.puml`](docs/diagramas/04-usuarios-progresso.puml): Diagrama 1 — usuários, progresso e conquistas (fonte PlantUML; PNG/SVG ao lado).
-- [`docs/diagramas/05-estrutura-educacional.puml`](docs/diagramas/05-estrutura-educacional.puml): Diagrama 2 — estrutura educacional, quizzes e atividades (fonte PlantUML; PNG/SVG ao lado).
-- [`docs/diagramas/06-assistente-gemini.puml`](docs/diagramas/06-assistente-gemini.puml): Diagrama 3 — backend Flask, assistente financeiro e integração com o Gemini (fonte PlantUML; PNG/SVG ao lado).
-- [`docs/diagramas/validacao-dois-diagramas.md`](docs/diagramas/validacao-dois-diagramas.md): validação dos Diagramas 1 e 2, conexões e pontos não determinados.
-- [`docs/diagramas/validacao-assistente-gemini.md`](docs/diagramas/validacao-assistente-gemini.md): validação do Diagrama 3, fluxo do chat e integração com o SDK.
-- [`docs/diagrama-classes.md`](docs/diagrama-classes.md): documentação histórica das três figuras anteriores (não é a fonte dos novos diagramas).
-- [`docs/rastreabilidade-classes.md`](docs/rastreabilidade-classes.md): auditoria caixa a caixa da versão anterior.
-- [`docs/diagramas/`](docs/diagramas/): fontes e imagens dos diagramas.
-
-> A pasta `docs/` está no `.gitignore` e não é versionada.
