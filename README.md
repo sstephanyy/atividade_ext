@@ -55,7 +55,7 @@ conhecimento prévio de finanças — cada módulo parte do zero e evolui com ex
 | Backend | Python, Flask, python-dotenv, Google Gen AI SDK |
 | Frontend | HTML5, CSS3 (Grid/Flexbox, variáveis CSS), JavaScript puro (ES6+) |
 | IA | API Google Gemini (`gemini-3.8-flash` por padrão) |
-| Ilustrações | Pixel-art (PNGs transparentes gerados por script com Pillow) |
+| Ilustrações | Pixel-art (PNGs transparentes) |
 | Persistência | `localStorage` do navegador (contas e progresso) |
 
 ## Como executar
@@ -104,7 +104,7 @@ GranaLab/
 │   ├── source/             # Folha original de assets
 │   └── preview-*.png       # Prévia dos assets e do dashboard
 ├── scripts/
-│   └── extract_pixel_assets.py  # Gera os recortes pixel-art (Pillow + NumPy)
+│   └── extract_pixel_assets.py  # Recorta as ilustrações da folha original (Pillow + NumPy)
 └── docs/                   # Requisitos, diagramas UML e documentação (não versionada)
 ```
 
